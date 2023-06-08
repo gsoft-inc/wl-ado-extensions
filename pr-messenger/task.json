@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "394f822c-53e3-4bfb-b90a-9e707676b35e",
+  "name": "PrMessenger",
+  "friendlyName": "PR Messenger",
+  "description": "Write a message to a PR and keep track of it.",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "alexandre.beaudoin@gsoft.com",
+  "version": {
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 10
+  },
+  "instanceNameFormat": "Echo $(samplestring)",
+  "inputs": [
+    {
+      "name": "message",
+      "type": "string",
+      "label": "Message",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "The default message displayed, supports Markdown and all valid Unicode characters."
+    },
+    {
+      "name": "messageSuccess",
+      "type": "string",
+      "label": "Message Success",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "A message override, printed in case of success."
+    },
+    {
+      "name": "messageFailure",
+      "type": "string",
+      "label": "Message Failure",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "A message override, printed in case of failure."
+    },
+    {
+      "name": "refreshMessagePosition",
+      "type": "boolean",
+      "label": "Refresh Message Position",
+      "defaultValue": false,
+      "required": false,
+      "helpMarkDown": "Should the comment will be brought to the top of the pull request comments."
+    }
+  ],
+  "execution": {
+    "Node16": {
+      "target": "index.js"
+    }
+  }
+}

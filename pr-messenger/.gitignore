@@ -1,0 +1,8 @@
+# IDEs
+.idea
+
+dist
+node_modules
+
+*.vsix
+.taskkey

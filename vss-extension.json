@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json.schemastore.org/vss-extension",
+  "manifestVersion": 1,
+  "id": "pr-messenger",
+  "name": "PR Messenger",
+  "version": "0.0.10",
+  "publisher": "abeaudoin",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "branding": {
+    "color": "#151320",
+    "theme": "dark"
+  },
+  "description": "An extension that enables users to easily add a alterable comment to pull requests.",
+  "categories": ["Azure Pipelines"],
+  "tags": [
+    "pull request",
+    "pipeline",
+    "build",
+    "comments",
+    "statuses",
+    "description"
+  ],
+  "icons": {
+    "default": "pr-messenger/dist/icon.png"
+  },
+  "files": [
+    {
+      "path": "pr-messenger/dist"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "7a3df220-4694-4010-aebd-17b5cdb7fbba",
+      "type": "ms.vss-distributed-task.task",
+      "targets": ["ms.vss-distributed-task.tasks"],
+      "properties": {
+        "name": "pr-messenger"
+      }
+    }
+  ]
+}
