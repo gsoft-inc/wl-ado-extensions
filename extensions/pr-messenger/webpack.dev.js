@@ -46,7 +46,7 @@ export default {
     plugins: [
         new CopyPlugin({
             patterns: [
-                { from: "./icon.png", to: "icon.png" },
+                { from: "./extension-icon.png", to: "extension-icon.png" },
                 { from: "./task.json", to: "task.json" }
             ]
         })

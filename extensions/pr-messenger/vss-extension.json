@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json.schemastore.org/vss-extension",
+  "$schema": "https://json.schemastore.org/vss-extension",
   "manifestVersion": 1,
   "id": "pr-messenger",
   "name": "PR Messenger",
@@ -14,6 +14,24 @@
     "color": "#151320",
     "theme": "dark"
   },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/workleap/wl-ado-extensions"
+  },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/workleap/wl-ado-extensions/extensions/pr-messenger/README.md"
+        },
+        "repository": {
+            "uri": "https://github.com/workleap/wl-ado-extensions/extensions/pr-messenger"
+        },
+        "support": {
+            "uri": "https://github.com/workleap/wl-ado-extensions/issues"
+        },
+        "license": {
+            "uri": "https://github.com/workleap/wl-ado-extensions/LICENSE"
+        }
+    },
   "description": "An extension that enables users to easily add a alterable comment to pull requests.",
   "categories": ["Azure Pipelines"],
   "tags": [
@@ -25,11 +43,11 @@
     "description"
   ],
   "icons": {
-    "default": "pr-messenger/dist/icon.png"
+    "default": "dist/extension-icon.png"
   },
   "files": [
     {
-      "path": "pr-messenger/dist"
+      "path": "dist"
     }
   ],
   "contributions": [
