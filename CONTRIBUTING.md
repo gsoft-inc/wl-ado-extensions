@@ -5,11 +5,9 @@ The following documentation is only for the maintainers of this repository.
 - [Monorepo setup](#monorepo-setup)
 - [Project overview](#project-overview)
 - [Installation](#installation)
-- [Develop the CLI packages](#Develop-the-CLI-packages)
-- [Release the packages](#release-the-packages)
+- [Develop the extensions](#Develop-the-extensions)
 - [Available commands](#commands)
-- [CI](#ci)
-- [Add a new package to the monorepo](#add-a-new-package-to-the-monorepo)
+- [Publishing](#publishing)
 
 ## Monorepo setup
 
@@ -39,7 +37,7 @@ To install the project, open a terminal at the root of the workspace and execute
 pnpm install
 ```
 
-## Develop the CLI packages
+## Develop the extensions
 
 The following documentation is a brief overview of the tools and processes involved in the development of the Azure DevOps extensions.
 
@@ -49,7 +47,7 @@ The following documentation is a brief overview of the tools and processes invol
 
 ### Working in `PR Messenger`
 
-See the [PR Messenger documentation](extensions/pr-messenger/README.md) or by running the `dist/index.js` file using `node` and passing it parameters.
+See the [PR Messenger documentation](extensions/pr-messenger/README.md) or by running the `dist/index.cjs` (generated after `pnpm dev`) file using `node`, all parameters must be set as an environment variable to be consumed by the extension.
 
 ### Linting
 

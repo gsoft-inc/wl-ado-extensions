@@ -10,7 +10,7 @@ export default {
     stats: "minimal",
     devtool: "eval-cheap-module-source-map",
     output: {
-        filename: "index.js",
+        filename: "index.cjs", // Hack to be able to run the task locally
         clean: true
     },
     cache: {
