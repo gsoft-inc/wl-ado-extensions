@@ -33,7 +33,9 @@
         }
     },
   "description": "An extension that enables users to easily add a alterable comment to pull requests.",
-  "categories": ["Azure Pipelines"],
+    "categories": [
+        "Azure Pipelines"
+    ],
   "tags": [
     "pull request",
     "pipeline",
@@ -54,7 +56,9 @@
     {
       "id": "7a3df220-4694-4010-aebd-17b5cdb7fbba",
       "type": "ms.vss-distributed-task.task",
-      "targets": ["ms.vss-distributed-task.tasks"],
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
       "properties": {
         "name": "pr-messenger"
       }
