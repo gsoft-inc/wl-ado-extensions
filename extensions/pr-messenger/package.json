@@ -1,0 +1,20 @@
+{
+    "name": "pr-messenger",
+    "version": "0.0.11",
+    "description": "",
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "webpack --config webpack.dev.js",
+        "build": "webpack --config webpack.build.js",
+        "publish": "tfx extension create --manifest-globs \"vss-extension.json\" --no-prompt --json --no-color --output-path \"../../\"",
+        "analyze": "webpack --config webpack.build.js --analyze"
+    },
+    "keywords": [],
+    "author": "alexandre.beaudoin@gsoft.com",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "azure-devops-node-api": "12.0.0",
+        "azure-pipelines-task-lib": "4.3.1"
+    }
+}

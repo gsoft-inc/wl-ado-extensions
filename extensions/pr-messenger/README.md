@@ -25,8 +25,8 @@ An extension that enables users to easily add a alterable comment to pull reques
 
 ### From the UI
 
-1. Search for `PR Messenger` in the`Tasks` tab ![PR Messenger in Tasks list](./doc/extension_in_tasks_list.png)
-2. Fill the form with the required information ![PR Messenger configuration](./doc/extension_form.png)
+1. Search for `PR Messenger` in the`Tasks` tab<br/>![PR Messenger in Tasks list](./doc/extension_in_tasks_list.png)
+2. Fill the form with the required information<br/>![PR Messenger configuration](./doc/extension_form.png)
 
 ### From the YAML
 
@@ -56,4 +56,4 @@ Example:
 
 ## Development
 
-See the [CONTRIBUTING guide](./CONTRIBUTING.md).
+See the [CONTRIBUTING guide](../../CONTRIBUTING.md).

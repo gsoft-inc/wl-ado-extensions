@@ -10,7 +10,7 @@ export default {
     stats: "minimal",
     devtool: "eval-cheap-module-source-map",
     output: {
-        filename: "index.js",
+        filename: "index.cjs", // Hack to be able to run the task locally
         clean: true
     },
     cache: {
@@ -46,7 +46,7 @@ export default {
     plugins: [
         new CopyPlugin({
             patterns: [
-                { from: "./icon.png", to: "icon.png" },
+                { from: "./extension-icon.png", to: "extension-icon.png" },
                 { from: "./task.json", to: "task.json" }
             ]
         })

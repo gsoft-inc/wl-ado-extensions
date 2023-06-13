@@ -4,4 +4,4 @@ Contains the custom Azure DevOps extensions required by the Workleap Front-end C
 
 ## PR Messenger
 
-See [the project README](./pr-messenger/README.md).
+See [the project README](./extensions/pr-messenger/README.md).
