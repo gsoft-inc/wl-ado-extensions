@@ -3,15 +3,15 @@
   "manifestVersion": 1,
   "id": "pr-messenger",
   "name": "PR Messenger",
-  "version": "0.0.11",
-  "publisher": "abeaudoin",
+  "version": "0.1.0",
+  "publisher": "Workleap",
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
   "branding": {
-    "color": "#151320",
+    "color": "#171417",
     "theme": "dark"
   },
   "repository": {
@@ -52,11 +52,11 @@
   ],
   "contributions": [
     {
-      "id": "7a3df220-4694-4010-aebd-17b5cdb7fbba",
+      "id": "cb569ed6-ce93-4293-a01c-9e518ea9068b",
       "type": "ms.vss-distributed-task.task",
       "targets": ["ms.vss-distributed-task.tasks"],
       "properties": {
-        "name": "pr-messenger"
+        "name": "dist"
       }
     }
   ]
